@@ -28,6 +28,14 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.image{
+    overflow: hidden;
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
 .form{
         display: flex;
         flex-direction: column;
