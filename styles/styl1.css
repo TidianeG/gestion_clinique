@@ -8,19 +8,20 @@
     background-repeat: no-repeat;
 }
 header{
-    height: 35vh;
+    height: 20vh;
 }
 
 .section-authenti{
     width: 100vw;
-    margin-top: 2vh;
+    margin-top: 5px;
 }
 .authenti{
-    height: 60vh;
+    height: 75vh;
     width: 40vw;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #ffffff;
     border-radius: 5px;
     margin: auto;
+    margin-bottom: 20px;
 
 }
