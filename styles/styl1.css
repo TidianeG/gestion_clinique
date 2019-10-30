@@ -7,15 +7,20 @@
     height: 100vh;
     background-repeat: no-repeat;
 }
+header{
+    height: 35vh;
+}
+
 .section-authenti{
     width: 100vw;
-    
-
+    margin-top: 2vh;
 }
 .authenti{
+    height: 60vh;
     width: 40vw;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #ffffff;
     border-radius: 5px;
     margin: auto;
+
 }
