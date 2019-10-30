@@ -35,7 +35,7 @@ header{
     display: inline-block;
     position: relative;
     overflow: hidden;
-    
+
 }
 
 .form{
@@ -45,4 +45,10 @@ header{
         text-align: justify;  
         align-items: center;
         margin: auto; 
+}
+.form>input[type="text"]{
+    margin-bottom: 20px;
+    width: 90%;
+    height: 35px;
+    margin: auto;
 }
