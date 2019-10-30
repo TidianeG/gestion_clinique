@@ -17,7 +17,7 @@ header{
 }
 .authenti{
     height: 75vh;
-    width: 40vw;
+    width: 60vw;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid #ffffff;
     border-radius: 5px;
@@ -30,7 +30,7 @@ header{
 }
 .image{
     overflow: hidden;
-    width: 45%;
+    width: 50%;
     height: 100%;
     display: inline-block;
     position: relative;
