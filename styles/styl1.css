@@ -29,22 +29,23 @@ header{
     align-items: center;
 }
 .image{
-    overflow: hidden;
     width: 50%;
     height: 100%;
     display: inline-block;
     position: relative;
     overflow: hidden;
+}
+.parent-form{
+    width: 100%;
 
 }
 
 .form{
         display: flex;
         flex-direction: column;
-        align-content: center;
-        text-align: justify;  
+        align-content: center;  
         align-items: center;
-        margin: auto; 
+     
 }
 .form>input[type="text"],input[type="password"]{
     margin-bottom: 5em;
