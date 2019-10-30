@@ -36,10 +36,12 @@ header{
     position: relative;
     overflow: hidden;
 }
+
 .form{
         display: flex;
         flex-direction: column;
         align-content: center;
         text-align: justify;  
-        align-items: center; 
+        align-items: center;
+        margin: auto; 
 }
