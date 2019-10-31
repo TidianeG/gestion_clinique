@@ -1,4 +1,6 @@
+body{
 
+}
 .page{
     margin: 0;
     padding: 0;
@@ -6,65 +8,85 @@
    width: 100vw;
     height: 100vh;
     background-repeat: no-repeat;
+    display: flex;
+        flex-direction: column;
+        align-content: center;  
+        align-items: center;
 }
-header{
-    height: 5vh;
-}
-
-.section-authenti{
-    width: 100vw;
-    margin-top: 2px;
-    height: 90vh;
-}
-.parent-authenti{
-    height: 100%;
-    width: 60vw;
+.sous-page{
+    height: 85%;
+    width: 60%;
     background-color: rgba(255, 255, 255, 0.9);
     border: 4px solid #ffffff93;
     border-radius: 10px 10px;
     margin: auto;
 }
+header{
+    height: 15%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+header>.header{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.header>h1{
+    margin-bottom: 0px;
+}
+
+.section-authenti{
+    height: 84%;
+    
+}
 .authenti{
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    border-radius: 10px 10px;
 }
-h1{
+h1,h2{
     text-align: center;
     color: rgb(43, 4, 136);
-}
+    }
 .image{
     width: 50%;
-    height: 95%;
+    height: 65vh;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    border: 4px solid #ffffff93;
-    border-radius: 10px 10px;
-}
+    }
 .parent-form{
     width: 50%;
-    }
-p{
-    margin-top: 2px;
-}
+    height: 65vh;
+       }
 .form{
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-content: center;  
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
     }
 .form>input[type="text"],input[type="password"]{
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     width: 80%;
     height: 25px;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+select, option, optgroup{
+    margin-bottom: 3em;
+    width: 84%;
+    height: 35px;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -72,7 +94,7 @@ p{
 .form>input[type="submit"]{
     width: 60%;
     height: 40px;
-    background-color: rgb(255, 115, 0);
+    background-color: rgb(43, 4, 136);
     color: white;
     border-radius: 10px 10px;
     font-family: 'Times New Roman', Times, serif;
