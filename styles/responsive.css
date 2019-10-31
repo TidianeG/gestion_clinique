@@ -1,0 +1,120 @@
+
+
+@media all and (min-width: 1200px) {
+    /* col-lg  */
+    
+
+}
+
+@media all and (min-width: 768px) and (max-width: 979px) {
+    /* col-md */
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .sous-page{
+        height: 80%;
+        width: 80%;
+    }
+    .header h1{
+        font-size: 16px;
+        
+    }
+    form label h2{
+            font-size: 14px;
+    }
+    
+    .parent-form{
+        
+        width: 100%;
+    }
+    .form{
+        position: center;
+    }
+
+    .image0{
+        width: 60px;
+        height: 60px;
+    }
+    .authenti{
+        display: hidden;
+        background-image: url('../images/authenti.jpg');    }
+    .image{
+        display: none;
+    }
+}
+
+@media all and (max-width: 767px) {
+    /* col-sm */
+    /* HEADER  */
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sous-page{
+        height: 80%;
+        width: 80%;
+    }
+    .header h1{
+        font-size: 16px;
+        
+    }
+    form label h2{
+            font-size: 14px;
+    }
+    
+    .parent-form{
+        
+        width: 100%;
+    }
+    .form{
+        position: center;
+    }
+    .image0{
+        width: 50px;
+        height: 50px;
+    }
+    .authenti{
+        background-image: url('../images/authenti.jpg');
+    }
+    .image{
+        display: none;
+    }
+}
+
+@media all and (max-width: 521px) {
+    /* col-xs*/
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .sous-page{
+        height: 80%;
+        width: 80%;
+    }
+    .header h1{
+        font-size: 16px;
+        
+    }
+    form label h2{
+            font-size: 14px;
+    }
+    .authenti{
+        background-image: url('../images/authenti.jpg');
+    }
+    .image{
+        display: none;
+    }
+    .parent-form{
+       
+        width: 100%;
+    }
+    .form{
+        position: center;
+    }
+    .image0{
+        width: 40px;
+        height: 40px;
+    }
+}
