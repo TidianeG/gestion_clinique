@@ -30,12 +30,12 @@ header{
     background-color: white;
 }
 .header{
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: nowrap;
+    background-color: white;
 }
-
 .image0{
     width: 70px;
     height: 70px;
