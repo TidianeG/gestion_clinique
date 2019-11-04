@@ -5,48 +5,53 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/styl1.css">
-    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style-login.css">
+    <link rel="stylesheet" href="styles/style1.css">
 </head>
 <body>
     <div class="page" >
-        <div class="sous-page">
-            <header >
-                <div class="header">
-                    <img class="image0" src="images/logo-clinique3.jpg" alt="">
-                    <h1>CLINIQUE SECUREX</h1>
-                    <img class="image0" src="images/clinique-logo1.png" alt="" >
+        <div class="container b-5">
+            <header class="row justify-content-between">
+                <div class="col-md-2 col-sm-2">
+                    <img  src="images/logo-clinique3.jpg" class="image0" alt="">
+                </div>
+                <div class="col-md-8 col-sm-8">    
+                    <h1 >CLINIQUE SECUREX</h1>
+                </div>
+                <div class="col-sm-2 col-md-2 "> 
+                    <img  src="images/clinique-logo1.png" class="image0" alt="" >
                 </div>
             </header><hr>
             <main>
-
-                <section class="section-authenti">
-                        <div class="authenti">
-                            <img class="image"  src="images/authenti2.jpeg" alt="">
-                            <div class="parent-form">
-
-                                <form class="form" action="">
-                                        <label for="" ><h2 class="small">AUTENTIFICATION</h2></label>
-                                        <select name="profil" id="">
-                                        <option value="">Profil</option>
-                                        <optgroup>
-                                            <option value="">Utilisateur</option>
-                                            <option value="">Admin</option>
-                                        </optgroup>
-                                    </select>
-                                    <input type="text" name="login" placeholder="Veuiller saisir le login" >
-                                    <input type="password" name="pass" placeholder="Mot de Passe" >
-                                    <input type="submit" value="Se Connecter" style="">     
-                                </form>
-                            </div>
-                        </div>
-                </section>
+                <div class="log row">
+                    <div class="col ">
+                        <img class="img-thumbnail"  src="images/authenti2.jpeg" alt="">
+                    </div>
+                    <div class="col ">
+                        <form class="form" action="">
+                            <label for="" ><h2 class="small">AUTENTIFICATION</h2></label>
+                            <select name="profil" id="">
+                                <option value="">Profil</option>
+                                <optgroup>
+                                    <option value="">Utilisateur</option>
+                                    <option value="">Admin</option>
+                                </optgroup>
+                            </select>
+                            <input type="text" name="login" placeholder="Veuiller saisir le login" >
+                            <input type="password" name="pass" placeholder="Mot de Passe" >
+                            <input type="submit" value="Se Connecter" style="">     
+                        </form>
+                    </div>
+                </div>
             </main>
             <footer>
 
             </footer>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js.map"></script>
 </body>
 </html>
