@@ -2,16 +2,18 @@ body{
     background-image: url("../images/medicale1.jpg");
 }
 
-header{
-    height: 15%;
-    background-color: white;
-    
 
-}
 .container{
     background-color: #ffffff94;
     border: 2px solid #ffffff;
     height: 80vh;
+    width: 60vw;
+}
+header{
+    height: 15%;
+    background-color: white;
+    width: 100%;   
+
 }
 .image0{
     width: 70px;
@@ -20,4 +22,8 @@ header{
 .log{
     height: 85%;
     width: 100%;
+}
+.img{
+    max-width: 100%;
+    height: auto;
 }
