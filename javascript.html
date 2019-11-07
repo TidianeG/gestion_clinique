@@ -26,14 +26,14 @@
         <h3>Contactez-Nous</h3>
         <div class="row" id="error"></div>
         <div class="col-12">
-          <form action="get" id="message_form" class="form-group">
+          <form action="get" id="message_form" class="form-group" >
             <div>
               <input
                 type="text"
                 name="nom"
                 id="nom"
                 placeholder="votre nom"
-                class="form-control"
+                class="form-control" onblur="verifNom(this)"
               />
             </div>
             <div>
@@ -43,6 +43,7 @@
                 id="email"
                 placeholder="email"
                 class="form-control"
+                onblur="verifMail(this)"
               />
             </div>
             <div>
@@ -52,6 +53,7 @@
                 id="confirm_email"
                 placeholder="confirmer votre email"
                 class="form-control"
+                onblur="verifMail(this)"
               />
             </div>
             <div>
@@ -62,6 +64,7 @@
                 cols="30"
                 rows="10"
                 class="form-control"
+                onblur="verifMessage(this)"
               ></textarea>
             </div>
             <div class="my-5">
