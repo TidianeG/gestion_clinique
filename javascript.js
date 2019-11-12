@@ -3,26 +3,47 @@ let email = document.getElementById("email");
 let confirm_email = document.getElementById("confirm_email");
 let message = document.getElementById("message");
 let message_form = document.getElementById("message_form");
-/*
-message_form.addEventListener("submit", function(event){
+let inputs = document.getElementsByTagName("input");
+let message_error = document.getElementById("error");
+
+message_form.addEventListener("change", function(event){
+   let message_erreur = "";
+   let row= document.querySelector('.row');
     event.preventDefault();
-    if(nom.value=="" || email.value=="" || confirm_email.value=="" || message.value==""){
-        alert('Veuiller renseigner tous les champs');
+    for(let i=0; i<inputs.length; i++){
+      if(inputs[i].value == ""){
+         message_erreur+="Veuiller renseigner tous les champs";
+         //row.classList.add('alert', 'alert-danger')
+      }
+      break;
     }
-    else if(email.value != confirm_email){
-        alert('Veuiller entrer des emails identique');
+    if(inputs[1].value != inputs[2].value){
+      
+      message_erreur+="Les email ne sont pas conformes";
+
     }
-    if(message_form.value < 3){
-        alert('le message enter doit superieur a 3 caratere');
+    else if(message.value.length<=3){
+      message_erreur+="Veuiller ecrire un message plus long";
     }
+    if(message_erreur===""){
+      row.classList.remove('alert', 'alert-danger');
+      row.classList.add('alert', 'alert-success');
+      message_error.innerText="Formulaire valide";
+      document.querySelector('.btn').disabled=false;
+    }  
     else{
-        alert('Donnees envoyer');
-    }
-}); */
+      row.classList.add('alert', 'alert-danger')
+      message_error.innerText=message_erreur;
+      document.querySelector('.btn').disabled=true;
+    } 
+});
+
+
+
 ////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////// PARTIE FONCTION /////////////////////////////////////////
 ////////////////////////// Fontion pour signaler une erreur sur le champ////////////////////////
-function surligne(champ, erreur)
+/*function surligne(champ, erreur)
 {
    if(erreur)
       champ.style.backgroundColor = "#fba";
@@ -78,8 +99,7 @@ function verifMessage(champ)
 }
 //////////////////////////////////////FONCTION verification du formulaire///////////////////////////
 
-message_form.addEventListener("submit",
-function verifForm(form)
+function verifForm(form,event)
 {
    let nomOk = verifPseudo(form.nom);
    let mailOk = verifMail(form.email);
@@ -90,7 +110,10 @@ function verifForm(form)
       return true;
    else
    {
+      event.preventDefault();
       alert("Veuillez remplir correctement tous les champs");
       return false;
+
    }
-}
+   
+}*/
