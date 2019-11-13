@@ -20,7 +20,6 @@ function ajout__element(){
 ajout.addEventListener('click', function(){
     ajout__element();
     inputs = document.querySelectorAll("#conteneur input");
-    
 })
 
 formulaire.addEventListener('submit', function(){
