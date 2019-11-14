@@ -25,7 +25,7 @@
       <div class="row"><h1 class="title">Formulaire d'inscription</h1></div>
       <div id="error"></div>
       <div class="container">
-        <form action="#" id="formulaire" class="form-group">
+        <form action="valid.php" method="post" id="formulaire" class="form-group">
           <div id="pseudo_inscription">
             <div class="row">
               <div class="col-12">
@@ -92,12 +92,14 @@
               <div id="conteneur" class="col-12"></div>
             </div>
             <div class="row mt-5">
-              <button type="submit" class="btn btn-primary">Envoyer</button>
+              <button type="submit" class="btn btn-primary" name="valider" >Envoyer</button>
             </div>
           </div>
         </form>
       </div>
     </div>
-    <!--script src="index.js"></script-->
+    <script src="index.js"></script>
   </body>
 </html>
+
+

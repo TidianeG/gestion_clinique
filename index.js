@@ -17,18 +17,28 @@ function ajout__element(){
     inputs = document.querySelectorAll("#conteneur input");  
 
 }
-ajout.addEventListener('click', function(){
-    ajout__element();
-    inputs = document.querySelectorAll("#conteneur input");
-})
 
-formulaire.addEventListener('submit', function(){
+formulaire.addEventListener('submit', function(event){
+    event.preventDefault();
     // inputs = document.querySelector("#conteneur input");
     if(document.getElementById('email').value==""){
         alert('le champ adresse email est obligatoire');
         document.getElementById('email').classList.add('alert', 'alert-danger');
     }
-    else if(inputs.length==0){
+    else if(document.getElementById('nom').value==""){
+        alert('Veuiller renseigner le champs nom');
+        document.getElementById('nom').classList.add('alert', 'alert-danger');
+    }
+    else if(document.getElementById('prenom').value==""){
+        alert('Veuiller renseigner le champs prenom');
+        document.getElementById('prenom').classList.add('alert', 'alert-danger');
+    }
+    else if(!document.getElementById('genreM').checked && !document.getElementById('genreF').checked){
+        alert('Veuiller renseigner le genre');
+        
+    }
+
+    /*else if(inputs.length==0){
         alert('veuiller selectionner au moins une option');
     }   
     else{    
@@ -37,5 +47,9 @@ formulaire.addEventListener('submit', function(){
                 alert('les champs doivent etre rempli')
             }
         }
+    }*/
+    else{
+        formulaire.submit();
     }
+    
 });
