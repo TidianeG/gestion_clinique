@@ -66,12 +66,12 @@ h1,h2{
 .image{
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: inline-block;
     position: relative;
     overflow: hidden;
-    background-position: center;
+    /*background-position: center;*/
     }
 .parent-form{
     width: 50%;
@@ -80,24 +80,24 @@ h1,h2{
 .form{
         height: 100%;
         display: flex;
-        flex-direction: column;
-        align-content: center;  
+        flex-direction: column;  
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
     }
+    #error_champ{
+        width: 80%;
+    }
 .form>input[type="text"],input[type="password"]{
-    margin-bottom: 3em;
     width: 80%;
-    height: 25px;
-    margin: auto;
+    height: 35px;
+    
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
 select, option, optgroup{
-    margin-bottom: 3em;
-    width: 84%;
+    width: 80%;
     height: 35px;
     margin: auto;
     font-family: 'Times New Roman', Times, serif;

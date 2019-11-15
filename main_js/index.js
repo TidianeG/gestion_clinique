@@ -20,21 +20,32 @@ function ajout__element(){
 
 formulaire.addEventListener('submit', function(event){
     event.preventDefault();
+    let nom=document.getElementById('nom');
+    let prenom=document.getElementById('prenom');
+    let email=document.getElementById('email');
+    let error_message= document.getElementById('error');
+    let genreF=document.getElementById('genreF');
+    let genreM=document.getElementById('genreM');
+    let error="";
     // inputs = document.querySelector("#conteneur input");
-    if(document.getElementById('email').value==""){
-        alert('le champ adresse email est obligatoire');
-        document.getElementById('email').classList.add('alert', 'alert-danger');
+    if(email.value==""){
+        error += "<label class='alert alert-danger'>Le chmap email est vide</label>";
+        email.classList.add('alert', 'alert-danger');
     }
-    else if(document.getElementById('nom').value==""){
-        alert('Veuiller renseigner le champs nom');
-        document.getElementById('nom').classList.add('alert', 'alert-danger');
+     if(nom.value==""){
+        error+="<label class='alert alert-danger'>Le chmap nom est vide</label>";
+       nom.classList.add('alert', 'alert-danger');
     }
-    else if(document.getElementById('prenom').value==""){
-        alert('Veuiller renseigner le champs prenom');
-        document.getElementById('prenom').classList.add('alert', 'alert-danger');
+    if(prenom.value==""){
+        error+="<label class='alert alert-danger'>Le chmap prenom est vide</label>";
+        prenom.classList.add('alert', 'alert-danger');
     }
-    else if(!document.getElementById('genreM').checked && !document.getElementById('genreF').checked){
-        alert('Veuiller renseigner le genre');
+    if(!genreF.checked && !genreM.checked){
+        error+="<label class='alert alert-danger'>Veuiller selectionner le genre</label>";
+        
+    }
+     if(error!=""){
+        error_message.innerHTML=error;
         
     }
 
@@ -48,7 +59,7 @@ formulaire.addEventListener('submit', function(event){
             }
         }
     }*/
-    else{
+    else if(nom.value!=="" && prenom.value!=="" && email.value!=="" && (genreM.checked==true || genreF.checked==true)){
         formulaire.submit();
     }
     
