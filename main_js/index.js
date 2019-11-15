@@ -18,6 +18,7 @@ function ajout__element(){
 
 }
 
+
 formulaire.addEventListener('submit', function(event){
     event.preventDefault();
     let nom=document.getElementById('nom');
@@ -27,28 +28,38 @@ formulaire.addEventListener('submit', function(event){
     let genreF=document.getElementById('genreF');
     let genreM=document.getElementById('genreM');
     let error="";
+    let tableau_error=[];
     // inputs = document.querySelector("#conteneur input");
+    /*email.addEventListener("keyup", function (event) {
+        if(email.validity.typeMismatch) {
+          email.setCustomValidity("J'attend un e-mail, mon cher !");
+        } else {
+          email.setCustomValidity("");
+        }
+    });*/
     if(email.value==""){
-        error += "<label class='alert alert-danger'>Le chmap email est vide</label>";
+        tableau_error.push("<label class='alert alert-danger'>Le chmap email est vide</label>");
         email.classList.add('alert', 'alert-danger');
+       
     }
      if(nom.value==""){
-        error+="<label class='alert alert-danger'>Le chmap nom est vide</label>";
+        tableau_error.push("<label class='alert alert-danger'>Le chmap nom est vide</label>");
        nom.classList.add('alert', 'alert-danger');
     }
     if(prenom.value==""){
-        error+="<label class='alert alert-danger'>Le chmap prenom est vide</label>";
+        tableau_error.push("<label class='alert alert-danger'>Le chmap prenom est vide</label>");
         prenom.classList.add('alert', 'alert-danger');
     }
     if(!genreF.checked && !genreM.checked){
-        error+="<label class='alert alert-danger'>Veuiller selectionner le genre</label>";
+        tableau_error.push("<label class='alert alert-danger'>Veuiller selectionner le genre</label>");
         
     }
-     if(error!=""){
-        error_message.innerHTML=error;
-        
+    for(let i=0;i<tableau_error.length;i++){
+        error+=tableau_error[i]+"";
     }
-
+         if(error!=""){
+            error_message.innerHTML=error;
+         }
     /*else if(inputs.length==0){
         alert('veuiller selectionner au moins une option');
     }   

@@ -22,21 +22,24 @@
             <main>
                 <section class="section-authenti">
                         <div class="authenti">
-                            <img class="image"  src="../images/authenti.jpg" alt="">
+                            <!--img class="image"  src="../images/authenti.jpg" alt=""-->
                             <div class="parent-form">
 
                                 <form class="form" action="#" method="POST" id="formulaire">
                                     <div for="" id="error_champ" class="control"><h2 class="small">AUTENTIFICATION</h2></div>
-                                    <select name="profil" id="select" >
+                                    <select name="profil"  >
                                         <option value="" class="form-control">Profil</option>
                                         <optgroup>
                                             <option id="option1" value="0" class="form-control">Utilisateur</option>
                                             <option id="option2" value="1" class="form-control">Admin</option>
                                         </optgroup>
                                     </select>
+                                    <div id="slect"></div>
                                     <input type="text" id="login" name="login" class="form-control" placeholder="Veuiller saisir le login" >
+                                    <div id="info_login"></div>
                                     <input type="password" id="pass" name="pass" class="form-control" placeholder="Mot de Passe" >
-                                    <input type="submit" value="Se Connecter" style="">     
+                                    <div id="info_pass"></div>
+                                    <input type="submit" value="Se Connecter" style="" class="form-control">     
                                 </form>
                             </div>
                         </div>
