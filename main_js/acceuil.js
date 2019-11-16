@@ -1,4 +1,15 @@
+
 let formulaire=document.getElementById("formulaire");
+
+
+let buton= document.getElementById('buton');
+buton.addEventListener('click', function(){
+    let sous_page=document.getElementById('sous_page');
+    let info=document.getElementById('info');
+    info.classList.add("cacher");
+    //sous_page.classList.add("afficher");
+    
+});
 formulaire.addEventListener("click", function(event){
     event.preventDefault();
     let login=document.getElementById("login");
