@@ -1,15 +1,18 @@
 
 let formulaire=document.getElementById("formulaire");
-
-
 let buton= document.getElementById('buton');
-buton.addEventListener('click', function(){
+
+/*buton.addEventListener('click', function(e){
+    //e.preventDefault();
     let sous_page=document.getElementById('sous_page');
-    let info=document.getElementById('info');
-    info.classList.add("cacher");
+    let parent_info=document.getElementById('parent_info');
+
+    //parent_info.classList.add("cacher");
+    //sous_page.style.display="block";
     //sous_page.classList.add("afficher");
+    //parent_info.remove();
     
-});
+});*/
 formulaire.addEventListener("click", function(event){
     event.preventDefault();
     let login=document.getElementById("login");
