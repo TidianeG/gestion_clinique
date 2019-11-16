@@ -38,27 +38,32 @@ formulaire.addEventListener('submit', function(event){
         }
     });*/
     if(email.value==""){
+        //error+="Le champ email est vide "+"";
         tableau_error.push("<label class='alert alert-danger'>Le chmap email est vide</label>");
         email.classList.add('alert', 'alert-danger');
        
     }
      if(nom.value==""){
+        //error+="Le champ nom est vide "+"";
         tableau_error.push("<label class='alert alert-danger'>Le chmap nom est vide</label>");
        nom.classList.add('alert', 'alert-danger');
     }
     if(prenom.value==""){
+        //error+="Le champ prenom est vide "+"";
         tableau_error.push("<label class='alert alert-danger'>Le chmap prenom est vide</label>");
         prenom.classList.add('alert', 'alert-danger');
     }
     if(!genreF.checked && !genreM.checked){
+        //error+="Aucun genre n'est selectionne"+"";
         tableau_error.push("<label class='alert alert-danger'>Veuiller selectionner le genre</label>");
         
     }
-    for(let i=0;i<tableau_error.length;i++){
+   for(let i=0;i<tableau_error.length;i++){
         error+=tableau_error[i]+"";
     }
          if(error!=""){
             error_message.innerHTML=error;
+            //error_message.innerHTML="<div class='alert alert-danger'>"+ error+" </div>";
          }
     /*else if(inputs.length==0){
         alert('veuiller selectionner au moins une option');
