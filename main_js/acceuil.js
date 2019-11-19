@@ -1,7 +1,4 @@
-
 let formulaire=document.getElementById("formulaire");
-
-
 let buton= document.getElementById('buton');
 buton.addEventListener('click', function(){
     let sous_page=document.getElementById('sous_page');

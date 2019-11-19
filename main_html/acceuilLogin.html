@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Clinique Securex</title>
    <link rel="stylesheet" href="../styles/styl1Login.css">
     <link rel="stylesheet" href="../styles/responsive.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float|fire-animation">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/clinique-logo1.png" />
 </head>
 <body>
     <div class="page" >
         <div style="overflow: hidden;">
-            <div class=" head">
-                <img src="../images/logo3.png" id="logo" alt="">
+            <div class="font-effect-fire-animation head">
+                <img src="../images/logo3.png" class="font-effect-fire-animation" id="logo" alt="">
                 <h1 class="h1"><span ></span> </h1>
             </div>
             <div id="carouselExampleCaptions" class="carousel  slide" data-ride="carousel" style="overflow: hidden;">            
@@ -100,12 +102,11 @@
             </div>
             <div id="parent_info">
               <div id="info" class="container d-flex justify-content-center">     
-                  <h1>Bienvenu à SECUREX</h1>
-                  <h3>Une clinique par des professionnelles de haut niveau</h3>
-                  <label for="">Votre santé notre prioritée</label>
+                  <h1 class="font-effect-fire-animation">Bienvenu à SECUREX</h1>
+                  <h3 class="font-effect-3d-float">Une clinique par des professionnelles de haut niveau</h3>
                   <p></p>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="buton" type="button">
-                    Connexion
+                    Aunthentification
                   </button>
               </div>
             </div>
@@ -113,28 +114,28 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h3 class="modal-title" id="exampleModalLabel">Authentification</h3>
+                            <header >
+                                <div class="header">
+                                    <img class="image0 " src="../images/logo-clinique3.jpg" alt="">
+                                        <h1>SECUREX</h1>
+                                    <img class="image0" src="../images/clinique-logo1.png" alt="" >
+                                </div>
+                            </header><hr>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
                             <div class="sous-page" id="sous_page" >
-                                <header >
-                                    <div class="header">
-                                        <img class="image0 " src="../images/logo-clinique3.jpg" alt="">
-                                            <h1>SECUREX</h1>
-                                        <img class="image0" src="../images/clinique-logo1.png" alt="" >
-                                    </div>
-                                </header><hr>
+                                
                                 <main>
                                     <section class="section-authenti">
                                             <div class="authenti">
                                                 <!--img class="image"  src="../images/authenti.jpg" alt=""-->
                                                 <div class="parent-form">
                     
-                                                    <form class="form" action="#" method="POST" id="formulaire">
-                                                        <div for="" id="error_champ" class="control"><h2 class="small">AUTENTIFICATION</h2></div>
+                                                    <form class="form" action="../php/valid.php" method="POST" id="formulaire">
+                                                       
                                                         <select name="profil"  >
                                                             <option value="" class="form-control">Profil</option>
                                                             <optgroup>
@@ -147,7 +148,7 @@
                                                         <div id="info_login"></div>
                                                         <input type="password" id="pass" name="pass" class="form-control" placeholder="Mot de Passe" >
                                                         <div id="info_pass"></div>
-                                                        <label for=""><input type="checkbox" value="1" style="" class="form-control"> Se souvenir de moi </label>   
+                                                        <div><input type="checkbox" value="" > Se souvenir de moi </div>   
                                                     </form>
                                                 </div>
                                             </div>
@@ -159,6 +160,7 @@
                               </div>
                         </div>
                         <div class="modal-footer">
+                          <div style="position:absolute; left: 0px;"><a href="#" >Mot de passe oublié ?</a></div>
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                           <button type="submit" class="btn btn-primary">Connection</button>
                         </div>

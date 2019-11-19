@@ -1,0 +1,17 @@
+.conteneur{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/statoscope2.JPG");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer{
+    margin-bottom: 0px;
+    background-color: white;
+}
+a{
+    font-size: 17px;
+}

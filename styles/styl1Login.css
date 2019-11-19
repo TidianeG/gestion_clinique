@@ -23,7 +23,7 @@ body{
             background-image: url('../images/font9.jpg');
             background-size: cover;
             z-index: -1; /* Keep the background behind the content */     
-            -webkit-filter: blur(3px);
+            -webkit-filter: blur(2px);
         -webkit-background-size: cover; /* pour Chrome et Safari */
         -moz-background-size: cover; /* pour Firefox */
         -o-background-size: cover; /* pour Opera */
@@ -100,14 +100,13 @@ body{
     width: 350px;
     height: auto;
     border-radius: 20px;
-    font-size: 23px;
+    font-size: 18px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .sous-page{
     height: auto;
     background-color: rgba(255, 255, 255, 0.623);
     margin: auto;
-    z-index: 99;
 }
 header{
     height: 15%;
@@ -167,7 +166,7 @@ h1{
 .image{
     padding: 0;
     margin: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: inline-block;
     position: relative;
@@ -178,14 +177,16 @@ h1{
     border-top-right-radius: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 50%;
-    height: 65vh;
+    width: 100%;
+    height: 40vh;
 }
 .form{
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;  
         align-items: center;
+        
         justify-content: space-between;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
@@ -205,7 +206,7 @@ select, option, optgroup{
     font-size: 18px;
 }
 .form>input[type="submit"]{
-    width: 80%;
+    width: 70%;
     height: 42px;
     background-color: rgb(43, 4, 136);
     color: white;
