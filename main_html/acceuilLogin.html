@@ -49,14 +49,16 @@
                 </div>
                 <div class="carousel-item" style="overflow: hidden;">
                   <img src="../images/chirurgie2.jpg" class="d-block w-100 img-fluid img-slide" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
+                  <div class="carousel-caption d-none d-md-block pl-5 pr-5">
                     <h2>Service de Chirurgie</h2>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <p>Le service de Chirurgie du Securex a un parcours bien particulier au sein de la clinique. C’est l’une des premières spécialités médicales qui a vu le jour dans les débuts de Securex, compte tenu de  l’accroissement des patients dont la prise en charge requérait un geste chirurgical. Depuis, il n’a  cessé d’évoluer jusqu’à disposer, à ce jour, la un plateau technique moderne et performant pour une bonne prise en charge des patients.
+                      Le Service de chirurgie est disponible tous les jours et travaille en étroite collaboration avec le Service de Réanimation et Urgence ainsi que la Stérilisation et le Service de Base. Cette collaboration s’élargie aux services de Radiologique et de Biologique clinique (Laboratoire) afin de pouvoir confirmer les diagnostics établis.
+                    </p>
                   </div>
                 </div>
                 <div class="carousel-item" style="overflow: hidden;">
                     <img src="../images/Cardiologie.jpg" class="d-block w-100 img-fluid img-slide" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block ">
                       <h2>Service Cardiologie</h2>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
@@ -134,8 +136,7 @@
                                                 <!--img class="image"  src="../images/authenti.jpg" alt=""-->
                                                 <div class="parent-form">
                     
-                                                    <form class="form" action="../php/valid.php" method="POST" id="formulaire">
-                                                       
+                                                    <form class="form" action="../php/valid.php" method="POST" id="formulaire1">              
                                                         <select name="profil"  >
                                                             <option value="" class="form-control">Profil</option>
                                                             <optgroup>
@@ -148,8 +149,9 @@
                                                         <div id="info_login"></div>
                                                         <input type="password" id="pass" name="pass" class="form-control" placeholder="Mot de Passe" >
                                                         <div id="info_pass"></div>
-                                                        <div><input type="checkbox" value="" > Se souvenir de moi </div>   
-                                                    </form>
+                                                        <div><input type="checkbox"> Se souvenir de moi </div>   
+                                                        
+                                                      </form>
                                                 </div>
                                             </div>
                                     </section>
@@ -160,9 +162,9 @@
                               </div>
                         </div>
                         <div class="modal-footer">
-                          <div style="position:absolute; left: 0px;"><a href="#" >Mot de passe oublié ?</a></div>
+                          <div style="position:absolute; left: 10px;"><a href="#" >Mot de passe oublié ?</a></div>
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="submit" class="btn btn-primary">Connection</button>
+                          <button type="submit" id="formulaire" class="btn btn-primary">Connection</button>
                         </div>
                       </div>
                     </div>
