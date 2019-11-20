@@ -7,8 +7,14 @@
             parent :: __construct($nom, $prenom, $email, $password);
             $this->niveau=$niveau;
         }
-        public function setNotes($notes){
-            $this->notes = $notes;
+        public function setNotes($tabNote){
+            if(is_array($tabNote)){
+                $this->notes=$tabNote;
+            }
+            else{
+                $this->notes =[];
+            }
+            
         }
         public function getNom(){
             return $this->nom;
@@ -26,7 +32,7 @@
             return $this->niveau;
         }
         public function getNotes(){
-            return $this->notes;;
+                return $this->notes;
         }
         public function moyenne(){
             $moyenne=array_sum($this->notes)/count($this->notes);

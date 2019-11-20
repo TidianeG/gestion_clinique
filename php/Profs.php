@@ -9,15 +9,16 @@
             parent :: __construct($nom, $prenom, $email, $password);
             $this->class=$class;
             $this->profil=$profil;
+            $this->setSalaire();
         }
         public function setSalaire(){
             if($this->profil==="stagiaire"){
                 $this->salaire = 150000;
             }
-            else if($profil==="vacataire"){
+            else if($this->profil==="vacataire"){
                 $this->salaire = 200000;
             }
-            else if($profil==="titulaire"){
+            else if($this->profil==="titulaire"){
                 $this->salaire = 400000;
             }
         }
