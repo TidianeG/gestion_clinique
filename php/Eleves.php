@@ -1,14 +1,13 @@
 <?php
-    require_once(Personnes.php);
+    //require_once('Personnes.php');
     class Eleves extends Personnes{
         protected $niveau;
         protected $notes;
-
-        public function __construct($nom, $prenom, $email, $password, $niveau){
+        public function __construct($nom,$prenom,$email,$password,$niveau){
             parent :: __construct($nom, $prenom, $email, $password);
             $this->niveau=$niveau;
         }
-        public function enregistreNotes($notes){
+        public function setNotes($notes){
             $this->notes = $notes;
         }
         public function getNom(){
@@ -27,7 +26,12 @@
             return $this->niveau;
         }
         public function getNotes(){
-            return ;
+            return $this->notes;;
+        }
+        public function moyenne(){
+            $moyenne=array_sum($this->notes)/count($this->notes);
+            return $moyenne;
+
         }
     }
 ?>
