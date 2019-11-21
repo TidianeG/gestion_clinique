@@ -25,18 +25,6 @@
         public function getSalaire(){
             return $this->salaire;
         }
-        public function getNom(){
-            return $this->nom;
-        }
-        public function getPrenom(){
-            return $this->prenom;
-        }
-        public function getEmail(){
-            return $this->email;
-        }
-        public function getPassword(){
-            return $this->password;
-        }
         public function getClass(){
             return $this->class;
         }

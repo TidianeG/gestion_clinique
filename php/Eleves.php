@@ -16,18 +16,6 @@
             }
             
         }
-        public function getNom(){
-            return $this->nom;
-        }
-        public function getPrenom(){
-            return $this->prenom;
-        }
-        public function getEmail(){
-            return $this->email;
-        }
-        public function getPassword(){
-            return $this->password;
-        }
         public function getNiveau(){
             return $this->niveau;
         }
