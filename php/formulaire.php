@@ -25,7 +25,7 @@
       <div class="row"><h1 class="title">Formulaire d'inscription</h1></div>
       <div id="error"></div>
       <div class="container">
-        <form action="valid.php" method="post" id="formulaire" class="form-group">
+        <form action="traitement.php" method="post" id="formulaire" class="form-group">
           <div id="pseudo_inscription">
             <div class="row">
               <div class="col-12">
