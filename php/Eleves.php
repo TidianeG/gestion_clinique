@@ -12,22 +12,22 @@
             $this->notes = $notes;
         }
         public function getNom(){
-            return $this->nom;
+            return $nom;
         }
         public function getPrenom(){
-            return $this->prenom;
+            return $prenom;
         }
         public function getEmail(){
-            return $this->email;
+            return $email;
         }
         public function getPassword(){
-            return $this->password;
+            return $password;
         }
         public function getNiveau(){
-            return $this->niveau;
+            return $niveau;
         }
         public function getNotes(){
-            return ;
+            return $notes;
         }
     }
 ?>
