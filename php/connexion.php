@@ -7,7 +7,7 @@
         } 
         public function connection(){
             try{ 
-                $bdd = new PDO("mysql:host=localhost;dbname=groupe2;charset=utf8", "gayeCHEIKH", "27ndawGAYE", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));   
+                $bdd = new PDO("mysql:host=localhost;dbname=clinique_generale;charset=utf8", "gaye95cheikh", "27ndawGAYE", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));   
                 echo "connection etablie!!!!!!!!!!!";
             }
             catch (Exception $e) {
@@ -32,6 +32,6 @@
         }     
     }
     $phpbase=new Php_Base();
-    $phpbase->executionRequete("SELECT * FROM users");
-    $phpbase->afficher();
+    //$phpbase->executionRequete("SELECT * FROM users");
+    //$phpbase->afficher();
 ?>
